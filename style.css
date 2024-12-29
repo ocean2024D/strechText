@@ -67,7 +67,7 @@ body {
     transform: rotateY(360deg); 
 }
 
-/* Second Parallax Layer */
+
 .parallax-layer-2 {
     height: 100vh;
     background-image: url('image9.png'); 
@@ -77,10 +77,10 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Responsive Settings */
+
 @media (max-width: 768px) {
     .stretch {
-        font-size: 4rem; 
+        font-size: 3rem; 
     }
     .content {
         padding: 20px;
