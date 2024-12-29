@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Parallax Section */
+.parallax {
+    height: 100vh;
+    background-image: url('image.png'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Content Section */
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+
+.stretch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.stretch {
+    font-family: Helvetica, Arial, sans-serif;
+    color: azure;
+    display: inline-block;
+    font-size: 7rem; 
+    transition: transform 0.5s ease; 
+    transform-origin: bottom; 
+}
+
+.stretch:hover {
+    transform: scaleY(1.5); 
+}
+
+/* 3D Image Container */
+.image-container {
+    perspective: 1000px; 
+    margin-top: 30px;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+}
+
+.image-container img:hover {
+    transform: rotateY(360deg); 
+}
+
+/* Second Parallax Layer */
+.parallax-layer-2 {
+    height: 100vh;
+    background-image: url('image9.png'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Responsive Settings */
+@media (max-width: 768px) {
+    .stretch {
+        font-size: 4rem; 
+    }
+    .content {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    .image-container img {
+        width: 200px;
+        height: 200px;
+    }
+}
